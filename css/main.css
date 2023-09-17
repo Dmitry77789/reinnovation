@@ -3018,6 +3018,7 @@ margin-left: 111.11px; /* Примерно 6.94444rem в пикселях */
   display: flex;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
+  align-items: center;
   justify-content: center;
   margin-top: 133.17px; /* Примерно 8.32367rem в пикселях */
   margin-right: auto;
@@ -3029,20 +3030,23 @@ margin-left: 111.11px; /* Примерно 6.94444rem в пикселях */
   }
 }
 
+@media (max-width: 576px) {
+  .step-slider__controls.mobile {
+    margin-top: 200.17px; /* Примерно 8.32367rem в пикселях */
+  }
+}
+
 .step-slider__slider {
   width: 100%;
   max-width: 720px; /* Примерно 45rem в пикселях (ваш выбор) */
   margin: 0 auto; /* Центрируем слайдер по горизонтали */
   height: 768px; /* Примерно 48rem в пикселях (ваш выбор) */
-  
 }
 @media (min-width: 1000px) {
   .step-slider__slider {
     margin: 0;
     max-width: 944px; /* Примерно 59rem в пикселях */
-    width: 820px; /* Примерно 51.25rem в пикселях */
-    min-height: 480px; /* Примерно 30rem в пикселях (ваш выбор) */
-    
+    width: 820px; /* Примерно 51.25rem в пикселях */    
     height: auto; /* Автоматическая высота, чтобы соответствовать содержимому */
   }
 }
@@ -3073,9 +3077,8 @@ margin-left: 111.11px; /* Примерно 6.94444rem в пикселях */
   margin: 0 auto; /* Центрируем слайд по горизонтали */
   margin-bottom: 64px; /* Примерно 4rem в пикселях (ваш выбор) */
 padding: 48px; /* Примерно 3rem в пикселях (ваш выбор) */
-
   will-change: transform;
-  height: 100%;
+  height: 800px;
   border: 1px solid #595a58;
   border-right: none;
   width: 90%; /* Заполните доступное пространство */
@@ -3085,11 +3088,13 @@ padding: 48px; /* Примерно 3rem в пикселях (ваш выбор) 
     margin: 0;
     padding: 40px 65px; /* Примерно 2.5rem и 4.02778rem в пикселях (ваш выбор) */
     width:  60%;
+    height: 500px;
   }
 }
 @media (max-width: 576px) {
   .step-slider__slide {
     width: 95%;
+    height: 600px;
     padding: 24px 32.44448px; /* Примерно 1.5rem и 2.02778rem в пикселях (ваш выбор) */
     margin-left: auto;
     margin-right: auto;
