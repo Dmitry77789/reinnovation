@@ -2915,29 +2915,30 @@ input::-webkit-outer-spin-button {
 
 .step-slider__container {
   background-color: #ecece8;
-  padding: 9.23188rem 0 12.23188rem 3.03865rem;
+  padding: 147.71px 0 195.71px 48.62px; /* Примерно 9.23188rem, 12.23188rem и 3.03865rem в пикселях */
 }
 @media (min-width: 1000px) {
   .step-slider__container {
-    padding: 10.41667rem 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    margin-left: 6.94444rem;
+    padding: 166.67px 0; /* Примерно 10.41667rem в пикселях */
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-pack: justify;
+-ms-flex-pack: justify;
+justify-content: space-between;
+margin-left: 111.11px; /* Примерно 6.94444rem в пикселях */
+
   }
 }
 @media (max-width: 576px) {
   .step-slider__container {
-    padding: 9.23188rem 0 12.23188rem 0.03865rem;
+    padding: 147.71px 0 195.71px 0.62px; /* Примерно 9.23188rem, 12.23188rem и 0.03865rem в пикселях */
   }
 }
 
 .step-slider__content {
   color: #001f1e;
-  margin-bottom: 5.32367rem;
+  margin-bottom: 85.18px; /* Примерно 5.32367rem в пикселях */
 }
 @media (min-width: 1000px) {
   .step-slider__content {
@@ -2948,8 +2949,8 @@ input::-webkit-outer-spin-button {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    width: 35.55556rem;
-    padding-left: 8.54167rem;
+    width: 568.89px; /* Примерно 35.55556rem в пикселях */
+    padding-left: 136.67px; /* Примерно 8.54167rem в пикселях */    
     margin: 0;
     background-color: #ecece8;
   }
@@ -2961,20 +2962,22 @@ input::-webkit-outer-spin-button {
 }
 
 .step-slider__title {
-  width: 20.5942rem;
+  width: 329.47px; /* Примерно 20.5942rem в пикселях */
   margin-right: auto;
   margin-left: auto;
   text-align: center;
 }
+
 @media (min-width: 1000px) {
   .step-slider__title {
-    width: 17.70833rem;
-    margin-bottom: 2.08333rem;
+    width: 283.33px; /* Примерно 17.70833rem в пикселях */
+    margin-bottom: 33.33px; /* Примерно 2.08333rem в пикселях */
     text-align: left;
     margin-left: 0;
     margin-right: 0;
   }
 }
+
 @media (max-width: 576px) {
   .step-slider__title {
     width: 95%;
@@ -3016,7 +3019,7 @@ input::-webkit-outer-spin-button {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  margin-top: 8.32367rem;
+  margin-top: 133.17px; /* Примерно 8.32367rem в пикселях */
   margin-right: auto;
   margin-left: auto;
 }
@@ -3028,16 +3031,18 @@ input::-webkit-outer-spin-button {
 
 .step-slider__slider {
   width: 100%;
-  max-width: 45rem; /* Увеличьте максимальную ширину слайдера на ваш выбор */
+  max-width: 720px; /* Примерно 45rem в пикселях (ваш выбор) */
   margin: 0 auto; /* Центрируем слайдер по горизонтали */
-  height: 48rem; /* Увеличьте высоту слайдера на ваш выбор */
+  height: 768px; /* Примерно 48rem в пикселях (ваш выбор) */
+  
 }
 @media (min-width: 1000px) {
   .step-slider__slider {
     margin: 0;
-    max-width: 59rem;
-    width: 51.25rem;
-    min-height: 30rem; /* Уменьшите минимальную высоту слайдера на ваш выбор */
+    max-width: 944px; /* Примерно 59rem в пикселях */
+    width: 820px; /* Примерно 51.25rem в пикселях */
+    min-height: 480px; /* Примерно 30rem в пикселях (ваш выбор) */
+    
     height: auto; /* Автоматическая высота, чтобы соответствовать содержимому */
   }
 }
@@ -3047,7 +3052,7 @@ input::-webkit-outer-spin-button {
     margin-left: auto;
     margin-right: auto;
     max-width: 100%;
-    height: 30rem;
+    height: 480px; /* Примерно 30rem в пикселях (ваш выбор) */
   }
 }
 
@@ -3066,8 +3071,9 @@ input::-webkit-outer-spin-button {
   background-color: #ecece8;
   color: #001f1e;
   margin: 0 auto; /* Центрируем слайд по горизонтали */
-  margin-bottom: 4rem; /* Увеличьте или уменьшите отступ между слайдами на ваш выбор */
-  padding: 3rem; /* Увеличьте внутренний отступ слайда на ваш выбор */
+  margin-bottom: 64px; /* Примерно 4rem в пикселях (ваш выбор) */
+padding: 48px; /* Примерно 3rem в пикселях (ваш выбор) */
+
   will-change: transform;
   height: 100%;
   border: 1px solid #595a58;
@@ -3077,14 +3083,14 @@ input::-webkit-outer-spin-button {
 @media (min-width: 1000px) {
   .step-slider__slide {
     margin: 0;
-    padding: 2.5rem 4.02778rem; /* Уменьшите внутренний отступ слайда для десктопа на ваш выбор */
-    width: 30.02778rem;
+    padding: 40px 65px; /* Примерно 2.5rem и 4.02778rem в пикселях (ваш выбор) */
+    width:  60%;
   }
 }
 @media (max-width: 576px) {
   .step-slider__slide {
     width: 95%;
-    padding: 1.5rem 2.02778rem; /* Уменьшите внутренний отступ слайда для десктопа на ваш выбор */
+    padding: 24px 32.44448px; /* Примерно 1.5rem и 2.02778rem в пикселях (ваш выбор) */
     margin-left: auto;
     margin-right: auto;
     border-right: 1px solid #bebfbb;
