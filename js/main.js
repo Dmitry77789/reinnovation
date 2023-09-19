@@ -25234,36 +25234,46 @@ document.addEventListener('DOMContentLoaded', function () {
   const footerLangSelect = document.getElementById('js-footer-lang');
   const navLinks = document.querySelectorAll('.nav__link');
   const footerLinks = document.querySelectorAll('.footer__pages-item');
+  const burgerNavLinks = document.querySelectorAll('.burger-menu__nav .nav__link'); // Select burger menu links
+
   const langTexts = {
     en: ['METOD', 'MISSION', 'FEATS', 'SERVICES', 'CONTACT'],
-    ru: ['МЕТОД', 'МИССИЯ', 'ПУТЬ', 'СЕРВИСЫ', 'КОНТАКТ']
+    ru: ['МЕТОД', 'МИССИЯ', 'ПУТЬ', 'СЕРВИСЫ', 'КОНТАКТ'],
   };
-  const updateText = selectedLang => {
+
+  const updateText = (selectedLang) => {
     updateLinksText(navLinks, langTexts, selectedLang);
     updateLinksText(footerLinks, langTexts, selectedLang);
+    updateLinksText(burgerNavLinks, langTexts, selectedLang); // Update burger menu links
   };
 
-  // Вызываем функцию для обновления текстов на странице при загрузке страницы
+  // Function to update text of elements based on selected language
+  const updateLinksText = (elements, texts, selectedLang) => {
+    elements.forEach((element, index) => {
+      element.textContent = texts[selectedLang][index];
+    });
+  };
+
+  // Call the updateText function to update texts on page load
   updateText(headerLangSelect.value);
 
-  // Обработчик изменения выбранного языка в шапке страницы
+  // Event listeners for language select elements
   headerLangSelect.addEventListener('change', function () {
     const selectedLang = headerLangSelect.value;
     updateText(selectedLang);
   });
 
-  // Обработчик изменения выбранного языка в бургер-меню
   burgerLangSelect.addEventListener('change', function () {
     const selectedLang = burgerLangSelect.value;
     updateText(selectedLang);
   });
 
-  // Обработчик изменения выбранного языка в футере
   footerLangSelect.addEventListener('change', function () {
     const selectedLang = footerLangSelect.value;
     updateText(selectedLang);
   });
 });
+
 })();
 
 /******/ })()
