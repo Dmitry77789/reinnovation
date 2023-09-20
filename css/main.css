@@ -2019,6 +2019,14 @@ input::-webkit-outer-spin-button {
   color: #fff;
 }
 
+.footer__pages--link {
+  transition: color 0.3s ease-in-out;
+}
+
+.footer__pages--link:hover {
+  color: #19f;
+}
+
 .footer__information {
   display: -webkit-box;
   display: -ms-flexbox;
