@@ -25233,7 +25233,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const burgerLangSelect = document.getElementById('js-burger-lang');
   const footerLangSelect = document.getElementById('js-footer-lang');
   const navLinks = document.querySelectorAll('.nav__link');
-  const footerLinks = document.querySelectorAll('.footer__pages-item');
+  const footerLinks = document.querySelectorAll('.footer__pages--link');
   const burgerNavLinks = document.querySelectorAll('.burger-menu__nav .nav__link'); // Select burger menu links
 
   const langTexts = {
