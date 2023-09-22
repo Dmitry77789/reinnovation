@@ -4223,7 +4223,16 @@ burgerIcon.addEventListener('click', () => {
   });
   
 
-
+  document.addEventListener('DOMContentLoaded', function () {
+    // Находим элемент логотипа
+    const logo = document.querySelector('.js-navbar-logo');
+  
+    // Добавляем обработчик события клика на логотип
+    logo.addEventListener('click', function () {
+      // Выполняем перенаправление на index.html
+      window.location.href = 'index.html';
+    });
+  });
 
       }),
 
