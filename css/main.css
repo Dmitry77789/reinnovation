@@ -620,7 +620,7 @@ input::-webkit-outer-spin-button {
 
 @media (max-width: 576px) {
   .burger-icon {
-    right: 0px;
+    right: -17px;
     top: 0.5rem;
   }
 }
@@ -710,13 +710,14 @@ input::-webkit-outer-spin-button {
   opacity: 0;
   visibility: hidden;
   justify-content: space-between;
-  transition: opacity 0.5s ease-in-out 0.3s; /* Задержка 5 секунд перед началом анимации */
+  
 
 }
 
 .navbar__container.isActive {
   opacity: 1;
   visibility: visible;
+
 }
 
 @media (min-width: 1000px){
