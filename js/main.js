@@ -220,30 +220,57 @@
 const burgerIcon = document.getElementById('js-burger');
 const navbarBackground = document.querySelector('.navbar__background');
 const navbarContainer = document.querySelector('.navbar__container');
+const bodyElement = document.body; // Получаем элемент body
 
-// Объявляем переменную для отслеживания состояния меню
-let isMenuOpen = false;
+// Функция для обработки изменения размера окна
+function handleWindowSizeChange() {
+  // Проверяем текущую ширину экрана
+  if (window.innerWidth <= 999) {
+    // Устанавливаем начальное значение display: none
+    navbarContainer.style.display = 'none';
 
-// Обработчик события клика на burger icon
-burgerIcon.addEventListener('click', () => {
-  if (!isMenuOpen) {
-    // Открываем меню
-    burgerIcon.classList.add('isActive');
-    navbarContainer.classList.add('isActive');
-    navbarContainer.style.display = 'flex'; // Добавляем это правило
-    navbarBackground.style.transition = 'clip-path 0.3s ease-in-out'; // Добавляем переход
-    navbarBackground.style.clipPath = 'polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)';
+    // Объявляем переменную для отслеживания состояния меню
+    let isMenuOpen = false;
+
+    // Обработчик события клика на burger icon
+    burgerIcon.addEventListener('click', () => {
+      if (!isMenuOpen) {
+        // Открываем меню
+        burgerIcon.classList.add('isActive');
+        navbarContainer.classList.add('isActive');
+        navbarContainer.style.display = 'flex'; // Устанавливаем display: flex только здесь
+        navbarBackground.style.transition = 'clip-path 0.3s ease-in-out'; // Добавляем переход
+        navbarBackground.style.clipPath = 'polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)';
+        
+        // Устанавливаем touch-action: none; когда меню открыто
+        bodyElement.style.touchAction = 'none';
+      } else {
+        // Закрываем меню
+        burgerIcon.classList.remove('isActive');
+        navbarContainer.classList.remove('isActive');
+        navbarBackground.style.transition = 'clip-path 0.3s ease-in-out'; // Добавляем переход
+        navbarContainer.style.display = 'none'; // Устанавливаем display: flex только здесь
+
+        navbarBackground.style.clipPath = 'polygon(100% 0px, 100% 0px, 100% 0px, 100% 0px)';
+        
+        // Возвращаем touch-action: initial; когда меню закрыто
+        bodyElement.style.touchAction = 'initial';
+      }
+      
+      // Инвертируем состояние меню
+      isMenuOpen = !isMenuOpen;
+    });
   } else {
-    // Закрываем меню
-    burgerIcon.classList.remove('isActive');
-    navbarContainer.classList.remove('isActive');
-    navbarContainer.style.display = ''; // Убираем правило для возврата к дефолтному значению
-    navbarBackground.style.transition = 'clip-path 0.3s ease-in-out'; // Добавляем переход
-    navbarBackground.style.clipPath = 'polygon(100% 0px, 100% 0px, 100% 0px, 100% 0px)';
+    // Если ширина экрана больше 999 пикселей, убираем display: none
+    navbarContainer.style.display = '';
   }
-  // Инвертируем состояние меню
-  isMenuOpen = !isMenuOpen;
-});
+}
+
+// Вызываем функцию для обработки размера окна при загрузке страницы
+handleWindowSizeChange();
+
+// Добавляем обработчик для изменения размера окна
+window.addEventListener('resize', handleWindowSizeChange);
 
 
 
