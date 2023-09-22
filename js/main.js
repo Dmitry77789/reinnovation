@@ -238,8 +238,9 @@ function handleWindowSizeChange() {
         // Открываем меню
         burgerIcon.classList.add('isActive');
         navbarContainer.classList.add('isActive');
-        navbarContainer.style.display = 'flex'; // Устанавливаем display: flex только здесь
-        navbarBackground.style.transition = 'clip-path 0.3s ease-in-out'; // Добавляем переход
+        setTimeout(() => {
+          navbarContainer.style.display = 'flex'; // Устанавливаем display: flex после задержки
+        }, 300); // Задержка в миллисекундах (0.3 секунды)        navbarBackground.style.transition = 'clip-path 0.3s ease-in-out'; // Добавляем переход
         navbarBackground.style.clipPath = 'polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)';
         
         // Устанавливаем touch-action: none; когда меню открыто
@@ -272,17 +273,6 @@ handleWindowSizeChange();
 // Добавляем обработчик для изменения размера окна
 window.addEventListener('resize', handleWindowSizeChange);
 
-
-
-// Обработчик события клика на navbar для изменения clip-path
-
-
-
-
-
-
-
-        /***/
       }),
 
 /***/ "./src/js/components/click.js":
