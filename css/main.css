@@ -620,7 +620,7 @@ input::-webkit-outer-spin-button {
 
 @media (max-width: 576px) {
   .burger-icon {
-    right: -17px;
+    right: -14px;
     top: 0.5rem;
   }
 }
