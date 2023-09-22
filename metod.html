@@ -22,93 +22,58 @@
     <img src="./img/svg/log.png" alt="Your logo">
   </div>
   <div class="site-container">
-    <header class="header header--position">
-      <div class="container flex header__container">
-        <a href="index.html" class="logo load__logo">
-          <img src="./img/svg/log.png" alt="RiseInnovatioin">
-          <p class="logo__title">RiseInnovation</p>
-        </a>
-
-        <nav class="nav  flex " title="Main navigation">
-          <ul class="list-reset nav__list flex">
-            <li class="nav__item"><a href="metod.html" class="nav__link">METOD</a></li>
-            <li class="nav__item"><a href="mission.html" class="nav__link">MISSION</a></li>
-            <li class="nav__item"><a href="feats.html" class="nav__link">FEATS</a></li>
-            <li class="nav__item"><a href="service.html" class="nav__link">SERVICES</a></li>
-            <li class="nav__item"><a href="contact.html" class="nav__link">CONTACT</a></li>
+    <div class="navbar__background js-navbar-background"></div>
+    <section class="navbar" data-component="nav">
+      <div class="navbar__logo js-navbar-logo" data-component="logo">
+        <img class="navbar__logo-img entered lazyloaded"
+          src="./img/svg/log.png" alt="Altermind">
+        <p class="logo__title">RiseInnovatioin</p>
+      </div>
+      <div class="burger-icon" id="js-burger">
+        <span class="burger-icon__label js-burger-label">Close</span>
+        <div class="burger-icon__wrapper">
+          <div class="burger-icon__line js-burger-line-1"></div>
+          <div class="burger-icon__line js-burger-line-2"></div>
+          <div class="burger-icon__line js-burger-line-3"></div>
+        </div>
+      </div>
+      <div class="navbar__container js-navbar-container">
+        <nav class="navbar__menu">
+          <ul class="navbar__menu-list">
+            <li class="navbar__menu-list-item js-menu-item"><a class="navbar__menu-list--link" href="metod.html">Method</a>
+            </li>
+            <li class="navbar__menu-list-item js-menu-item"><a class="navbar__menu-list--link" href="mission.html">Mission</a>
+            </li>
+            <li class="navbar__menu-list-item js-menu-item"><a class="navbar__menu-list--link" href="feats.html">Feats</a>
+            </li>
+            <li class="navbar__menu-list-item js-menu-item"><a class="navbar__menu-list--link" href="service.html">Service</a>
+            </li>
+            <li class="navbar__menu-list-item js-menu-item"><a class="navbar__menu-list--link" href="contact.html">Contact</a>
+            </li>
           </ul>
-          <a href="#" class="nav__link"></a>
         </nav>
-
-        <div class="column-three-content">
-          <ul class="header__socials">
-            <li class="header__socials-item">
+        <div class="navbar__socials-wrapper">
+          <ul class="navbar__socials">
+            <li class="navbar__socials-item js-socials-item">
               <a href="" target="_blank" rel="noopener">
-                <img src="./img/svg/insta.png" alt="inst">
+                <img src="./img/svg/telegram.png" alt="Telegram">
               </a>
             </li>
-
-            <li class="header__socials-item">
+            <li class="navbar__socials-item js-socials-item">
               <a href="" target="_blank" rel="noopener">
-                <img src="./img/svg/telegram.png" alt="tg">
+                <img src="./img/svg/insta.png" alt="Inst">
               </a>
             </li>
           </ul>
-          <div class="header__lang-wrapper">
-            <select class="header__lang" name="lang" id="js-header-lang" data-component="lang-switcher">
-              <option class="header__lang-item" value="en" selected>EN</option>
-              <option class="header__lang-item" value="ru">RUS</option>
+          <div class="navbar__lang-wrapper js-lang">
+            <select class="navbar__lang" name="lang" id="js-navbar-lang" data-component="lang-switcher">
+              <option class="navbar__lang-item" value="en" selected="">EN</option>
+              <option class="navbar__lang-item" value="ru">RU</option>
             </select>
           </div>
         </div>
-
-        <div class="burger-menu">
-          <div id="burger-button" class="burger-menu__button burger">
-            <div class="burger-menu__line"></div>
-            <div class="burger-menu__line">
-              <span class="close">
-                <span>Close</span>
-              </span>
-            </div>
-            <div class="burger-menu__line"></div>
-
-          </div>
-          <div class="burger-menu__container">
-            <nav id="menu" class="burger-menu__nav">
-
-              <div class="burger-menu__lang-wrapper">
-                <select class="burger-menu__lang" name="lang" id="js-burger-lang" data-component="lang-switcher">
-                  <option class="burger-menu__lang-item" value="en" selected>EN</option>
-                  <option class="header__lang-item" value="ru">RUS</option>
-                </select>
-              </div>
-
-              <ul class="list-reset nav__list flex">
-                <li class="nav__item"><a href="metod.html" class="nav__link">METOD</a></li>
-                <li class="nav__item"><a href="mission.html" class="nav__link">MISSION</a></li>
-                <li class="nav__item"><a href="feats.html" class="nav__link">FEATS</a></li>
-                <li class="nav__item"><a href="service.html" class="nav__link">SERVICES</a></li>
-                <li class="nav__item"><a href="contact.html" class="nav__link">CONTACT</a></li>
-              </ul>
-
-              <ul class="burger-menu__socials">
-                <li class="burger-menu__socials-item">
-                  <a href="https://vk.com/id781950702" target="_blank" rel="noopener">
-                    <img src="./img/svg/insta.png" alt="inst">
-                  </a>
-                </li>
-
-                <li class="burger-menu__socials-item">
-                  <a href="https://vk.com/id781950702" target="_blank" rel="noopener">
-                    <img src="./img/svg/telegram.png" alt="tg">
-                  </a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-        </div>
       </div>
-    </header>
+    </section>
 
     <main class="main">
       <section class="identifi--secondary">
@@ -279,7 +244,7 @@
         <div class="footer__navigation element">
           <img class="footer__logo element" src="./img/svg/log.png" alt="riseinnovation">
           <nav class="footer__pages">
-          <div class="footer__pages-item">
+            <div class="footer__pages-item">
               <a class="footer__pages--link" href="metod.html">METOD</a>
             </div>
             <div class="footer__pages-item">
