@@ -1132,7 +1132,7 @@ input::-webkit-outer-spin-button {
 }
 .text-image__content {
   margin-left: 5.44444rem;
-  padding: 6.38889rem 0 0;
+  padding: 0rem 0 0;
   grid-gap: 2.22222rem;
   gap: 2.22222rem;
   width: 23.43056rem;
@@ -2193,7 +2193,6 @@ margin-right: auto;
   -ms-flex-align: center;
   align-items: center;
   padding: 50px;
-  margin-top: 7rem;
 }
 .title-text-sample .container .title-text-sample__title {
   text-align: center;
