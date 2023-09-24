@@ -1466,7 +1466,6 @@ input::-webkit-outer-spin-button {
   justify-content: center;
   text-align: center;
   color: var(--light-color);
-  margin-left: 1.5rem;
 }
 @media (max-width: 576px) {
   .services__container {
@@ -1477,13 +1476,7 @@ input::-webkit-outer-spin-button {
 
 .services__image-wrapper {
   position: relative;
-  width: 70%;
-  height: 70%;
-}
-@media (max-width: 576px) {
-  .services__image-wrapper {
-    width: 80%;
-  }
+  width: 100%;
 }
 
 .services__image-container {
@@ -1496,6 +1489,10 @@ input::-webkit-outer-spin-button {
   -ms-transform-origin: center center;
   transform-origin: center center;
   border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+margin-left: auto;
+margin-right: auto;
   -webkit-transition: opacity 0.3s;
   -o-transition: opacity 0.3s;
   transition: opacity 0.3s;
