@@ -1481,7 +1481,7 @@ input::-webkit-outer-spin-button {
     width: 100%;
     align-items: center;
     margin-top: auto;
-    margin-right: 0.7rem;
+    margin-right: 0rem;
     display: flex;
 }
 
