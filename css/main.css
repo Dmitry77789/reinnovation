@@ -1446,6 +1446,8 @@ input::-webkit-outer-spin-button {
 @media (max-width: 576px) {
   .services__content-wrapper {
     width: 100%;
+    left: 49%;
+    top: 40%;
   }
 }
 
