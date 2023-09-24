@@ -1438,7 +1438,7 @@ input::-webkit-outer-spin-button {
   text-align: center;
   position: absolute;
   top: 50%;
-  left: 49.4%;
+  left: 50%;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
